@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>벌금 기록 프로그램</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f4f4f4; }
+        button { margin: 5px; padding: 10px 15px; cursor: pointer; }
+        .summary { margin-top: 20px; }
+        .player-list { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>벌금 기록 프로그램</h1>
+
+    <div>
+        <h2>참여자 추가</h2>
+        <label for="participantName">이름:</label>
+        <input type="text" id="participantName" required>
+        <button id="addParticipantButton">참여자 추가</button>
+    </div>
+
+    <div class="player-list">
+        <h2>참여자 목록</h2>
+        <ul id="participantList">
+            <!-- 참여자 목록이 여기에 추가됩니다. -->
+        </ul>
+    </div>
+
+    <h2>벌금 기록</h2>
+    <table id="fineTable">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>상황</th>
+                <th>금액</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 벌금 기록이 여기에 추가됩니다. -->
+        </tbody>
+    </table>
+
+    <div class="summary">
+        <h2>총 합계</h2>
+        <div id="personSummary">
+            <!-- 개인별 총 벌금이 여기에 표시됩니다. -->
+        </div>
+        <div id="totalSummary">
+            <strong>전체 합계: <span id="totalAmount">0</span>원</strong>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
